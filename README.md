@@ -24,7 +24,6 @@ To run the code, simply type:
 python3 aStarPython.py 
 ```
 
-The output of the program is a video that shows how a robot would follow the path found by the algorithm. 
 In order to increase flexibility when testing the program with different settings, the user is prompted with several questions as below: 
 
 ```
@@ -34,10 +33,11 @@ In order to increase flexibility when testing the program with different setting
 ---> Press >m< for manhatan distance, >d< for diagonal distance when measuring distance to goal: 
 ```
 
-Therefore the user can choose the size of the video that will be produced; which seed they want for the random map; if going near barriers has added weights and if the calculation of the distance to the goal should be done using manhatan distance or diagonal distance. 
+  Therefore the user can choose the size of the output video that will be produced; which seed they want for the random map; if going near barriers has added weights and if the calculation of the distance to the goal should be done using manhatan distance or diagonal distance. 
 
-In order to test the code I decided to run it 3 times with different settings: with/without weight near barriers and with manhatan/diagonal distance. For all of the program runs I used the same random map generation seed "3". 
-The results of each of them are presented in below. 
+  In order to test the code I decided to run it 3 times with different settings: with/without weight near barriers and with manhatan/diagonal distance. For all of the program runs I used the same random map generation seed "3". The output shows a path being built from start to finish on a map in form of video. The "black" squares represent barriers, "white" squares represent free spaces, "blue" squares represent free spaces however they are "harder to walk". The path going through dark blue squares costs more than that going through light blue squares, which in turn costs more than the path going through white squares. The "pink" square on the top left of the map represents the start, the "pink" square on the bottom right of the map represents the end. 
+
+The results of each of the different runs of the program are presented below. 
 
 ### 2.1 No weights near barriers, using manhatan distance
 
