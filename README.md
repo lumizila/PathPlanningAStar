@@ -7,7 +7,7 @@ In this assigment I implemented the A* path search algorithm. This assigment fol
 ## Contents
 
 1. The A* algorithm
-2. Multiple runs of the algorithm
+2. Multiple runs of the program
 3. Conclusion
 4. Extra content
 5. References
@@ -16,7 +16,7 @@ In this assigment I implemented the A* path search algorithm. This assigment fol
 
 #TODO explain A*
 
-## 2. Multiple runs of the algorithm
+## 2. Multiple runs of the program
 
 To run the code, simply type:
 
