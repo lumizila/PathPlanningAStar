@@ -155,7 +155,7 @@ def distanceToGoalHeuristicWeight(i,j, color, distType):
 	return distanceToGoal*weight
 
 ###DEFINING IMAGE SIZE
-heightWidthStr = input("---> What is the height/width of image in pixels? (must me multiple of 50) ")
+heightWidthStr = input("---> What is the height/width of the video in pixels? (must me multiple of 50) ")
 hw = int(heightWidthStr)
 scale = int(hw/50)
 print("The scale of the image is: "+str(scale))
