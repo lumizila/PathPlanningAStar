@@ -36,12 +36,21 @@ In order to increase flexibility when testing the program with different setting
 
 Therefore the user can choose the size of the video that will be produced; which seed they want for the random map; if going near barriers has added weights and if the calculation of the distance to the goal should be done using manhatan distance or diagonal distance. 
 
-In order to test the code I decided to run it 3 times with different settings: with/without weight near barriers and with manhatan/diagonal distance.
+In order to test the code I decided to run it 3 times with different settings: with/without weight near barriers and with manhatan/diagonal distance. For all of the program runs I used the same random map generation seed "3". 
 The results of each of them are presented in below. 
 
 ### 2.1 No weights near barriers, using manhatan distance
+
+![GitHub Logo](/result1.png)
+
 ### 2.2 With weights near barriers, using manhatan distance
+
+![GitHub Logo](/result2.png)
+
 ### 2.3 With weights near barriers, using diagonal distance
+
+![GitHub Logo](/result3.png)
+
 
 ## 3. Conclusion
 
