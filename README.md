@@ -14,6 +14,8 @@ In this assigment I implemented the A* path search algorithm. This assigment fol
 
 ## 1. The A* algorithm
 
+#TODO explain A*
+
 ## 2. Multiple runs of the algorithm
 
 To run the code, simply type:
@@ -42,6 +44,8 @@ The results of each of them are presented in below.
 ### 2.3 With weights near barriers, using diagonal distance
 
 ## 3. Conclusion
+
+#TODO compare and conclude
 
 ## 4. Extra content
 
