@@ -84,11 +84,12 @@ This path is the same as the previous one in the beggining, however later it bec
 
 ## 3. Conclusion
 
-&emsp; #TODO compare and conclude
+&emsp; I believe map with weights near barriers is more close to a real world scenario where walking near obstacles is more risky. In that sense, the best path was done by using manhatan distance to calculate h value (test 2) because that is the one the path was furthest from the barriers most of the time. In reality when I started my algorithm I was only using diagonal distance and I realized diagonal distance gives too much preference for a diagonal path, which is why I decided to use the option of manhatan distance. I notice similar results with different seeds to generate the random maps as well. 
+In the future I would like to add other distance to goal calculations for testing such as Euclidean Distance.
 
 ## 4. Extra content
 
-The code for this assigment can be found at: https://github.com/lumizila/PathPlanningAStar
+The code for this assigment, as well as videos of the paths mentioned above being traced can be found at: https://github.com/lumizila/PathPlanningAStar
 
 ## 5. References
 
