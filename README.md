@@ -14,32 +14,32 @@ In this assigment I implemented the A* path search algorithm. This assigment fol
 
 ## 1. The A* algorithm
 
-A* was first published in 1968 by Peter Hart, Nils Nilsson and Bertram Raphael. 
+&emsp;A* was first published in 1968 by Peter Hart, Nils Nilsson and Bertram Raphael. 
 It can be seen as an extention of the Dijkstra algorithm and it presents better performance than the Dijkstra algorithm. 
 A* is a graph traversal algorithm to find a path that uses heuristics to guide the search (hence why it has better performance).
 One of the drawbacks of A* is a high space complexity, since it needs to store all the generated nodes in memory. 
-In pseudocode, the algorithm goes as follows:
+
+In pseudocode without extra details, the algorithm goes as follows:
 
 ```
-make an openlist containing only the starting node
-   make an empty closed list
-   while (the destination node has not been reached):
-       consider the node with the lowest f score in the open list
-       if (this node is our destination node) :
-           we are finished 
+create an openlist and add the starting node
+create an empty closed list
+   while (the open list is not empty):
+       choose the node with the lowest f score in the open list
+       if (this node is the destination node) :
+           shows path from this node until the starting node by looking at each node's "parents"
        if not:
            put the current node in the closed list and look at all of its neighbors
            for (each neighbor of the current node):
-               if (neighbor has lower g value than current and is in the closed list) :
-                   replace the neighbor with the new, lower, g value 
-                   current node is now the neighbor's parent            
-               else if (current g value is lower and this neighbor is in the open list ) :
-                   replace the neighbor with the new, lower, g value 
-                   change the neighbor's parent to our current node
-
-               else if this neighbor is not in both lists:
-                   add it to the open list and set its g
+               calculate new g,h,f values
+               if (neighbor is not in the open list and not in the closed list) :
+                  add it to the open list and set its g,f,h and set the parent node to be the chosen node      
+               else if (neighbor is not in closed list and the new f value is < than the oldest one) :
+                  update g,h,f values with new values for them and update parent node to be the chosen node
+                   
 ```
+
+In A*, additional variables g,h,f are used as seen above. h is the estimated distance to the goal using a certain heuristic. In my program, h can be calculated by using diagonal distance or manhatan distance to goal. g is the known distance from the starting node to this current one (it is calculated by using the parent node's g plus 1). f is just a sum of g and h. 
 
 ## 2. Multiple runs of the program
 
