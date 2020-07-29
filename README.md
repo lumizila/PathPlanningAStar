@@ -17,7 +17,7 @@ In this assigment I implemented the A* path search algorithm. This assigment fol
 &emsp;A* was first published in 1968 by Peter Hart, Nils Nilsson and Bertram Raphael. 
 It can be seen as an extention of the Dijkstra algorithm and it presents better performance than the Dijkstra algorithm. 
 A* is a graph traversal algorithm to find a path that uses heuristics to guide the search (hence why it has better performance).
-One of the drawbacks of A* is a high space complexity, since it needs to store all the generated nodes in memory. 
+One of the drawbacks of A* is a high space complexity, since it needs to store all the generated nodes in memory. You can learn more about A* algorithm at https://en.wikipedia.org/wiki/A*_search_algorithm 
 
 In pseudocode without extra details, the algorithm goes as follows:
 
@@ -68,14 +68,19 @@ python3 aStarPython.py
 
 ![GitHub Logo](/result1.png)
 
+As seen in the image, this path is mostly diagonal. That is because the number barriers (in black) are not so big so the path is mostly open. 
+
 ### 2.2 With weights near barriers, using manhatan distance
 
 ![GitHub Logo](/result2.png)
+
+This path shows large deviations(curves) compared to the previous result (without the weights near barriers).
 
 ### 2.3 With weights near barriers, using diagonal distance
 
 ![GitHub Logo](/result3.png)
 
+This path is the same as the previous one in the beggining, however later it becomes mostly diagonal. 
 
 ## 3. Conclusion
 
