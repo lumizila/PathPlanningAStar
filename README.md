@@ -39,7 +39,7 @@ create an empty closed list
                    
 ```
 
-In A*, additional variables g,h,f are used as seen above. h is the estimated distance to the goal using a certain heuristic. In my program, h can be calculated by using diagonal distance or manhatan distance to goal. g is the known distance from the starting node to this current one (it is calculated by using the parent node's g plus 1). f is just a sum of g and h. 
+&emsp;In A*, additional variables g,h,f are used as seen above. h is the estimated distance to the goal using a certain heuristic. In my program, h can be calculated by using diagonal distance or manhatan distance to goal. g is the known distance from the starting node to this current one (it is calculated by using the parent node's g plus 1). f is just a sum of g and h. 
 
 ## 2. Multiple runs of the program
 
