@@ -14,7 +14,32 @@ In this assigment I implemented the A* path search algorithm. This assigment fol
 
 ## 1. The A* algorithm
 
-#TODO explain A*
+A* was first published in 1968 by Peter Hart, Nils Nilsson and Bertram Raphael. 
+It can be seen as an extention of the Dijkstra algorithm and it presents better performance than the Dijkstra algorithm. 
+A* is a graph traversal algorithm to find a path that uses heuristics to guide the search (hence why it has better performance).
+One of the drawbacks of A* is a high space complexity, since it needs to store all the generated nodes in memory. 
+In pseudocode, the algorithm goes as follows:
+
+```
+make an openlist containing only the starting node
+   make an empty closed list
+   while (the destination node has not been reached):
+       consider the node with the lowest f score in the open list
+       if (this node is our destination node) :
+           we are finished 
+       if not:
+           put the current node in the closed list and look at all of its neighbors
+           for (each neighbor of the current node):
+               if (neighbor has lower g value than current and is in the closed list) :
+                   replace the neighbor with the new, lower, g value 
+                   current node is now the neighbor's parent            
+               else if (current g value is lower and this neighbor is in the open list ) :
+                   replace the neighbor with the new, lower, g value 
+                   change the neighbor's parent to our current node
+
+               else if this neighbor is not in both lists:
+                   add it to the open list and set its g
+```
 
 ## 2. Multiple runs of the program
 
